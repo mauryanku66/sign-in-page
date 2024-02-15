@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+.main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.form{
+    width: 35rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+     border: 0.2rem solid rgb(83, 139, 185);
+     border-radius: 2rem;
+     background-color: rgba(83, 139, 185, 0.356);
+     box-shadow: 3rem 2rem 6rem black;
+}
+/* .input{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    
+} */
+.input {
+    position: relative;
+    display: flex;
+    
+}
+/* .inputPass label{
+    position: absolute;
+    font-size: 2rem;
+    transition: all 0.3s linear;
+    top: -0.7rem;
+} */
+.input label{
+    position: absolute;
+    font-size: 2rem;
+    transition: all 0.1s linear;
+    top: -0.7rem;
+    color: white;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 0.1rem solid white;
+}
+.input input{
+    background-color: rgba(0, 0, 0, 0);
+    width: 30rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    transition: all 0.1s linear;
+    color: white;
+}
+h3{
+    font-size: 4rem;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(83, 139, 185);
+} 
+.container{
+    margin: 5rem 0 0 0;
+}
+.input input:valid ~label,
+.input input:focus ~ label
+ {
+    top: -1.8rem;
+    font-size: 1.5rem;
+    color: rgb(59, 144, 218);
+}
+.other{
+    font-size: 1.8rem;
+    margin: 0 0 3rem 0;
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+}
+.button{
+    align-items: center
+    ;
+    display: flex;
+    justify-content: center;
+
+
+}
+#submit{
+    width: 19rem;
+    height: 3rem;
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(83, 139, 185);
+    border: none;
+    outline: none;
+}
+.main img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    filter: brightness(34%);
+    z-index: -1;
+}
+.other label{
+    color: white;
+}
+.other a {
+    color:rgb(83, 139, 185);
+
+}
+.input input:focus{
+    border-bottom: 0.1rem solid rgb(83, 139, 185);
+}
